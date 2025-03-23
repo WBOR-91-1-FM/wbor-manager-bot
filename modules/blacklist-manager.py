@@ -1,9 +1,10 @@
 import discord
-from discord.ext import commands
-from lists import profanity_list, ignored_words
 import httpx
+from discord.ext import commands
 
-from modules.parsing import is_offense_warning, get_original_word, is_utf_warning
+from lists import ignored_words, profanity_list
+from modules.parsing import (get_original_word, is_offense_warning,
+                             is_utf_warning)
 from modules.utilities import user_can_run_command
 
 """

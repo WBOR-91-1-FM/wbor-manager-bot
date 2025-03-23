@@ -1,5 +1,6 @@
 from fastapi import FastAPI
-from lists import profanity_list, ignored_words
+
+from lists import ignored_words, profanity_list
 
 tags_metadata = [
     {

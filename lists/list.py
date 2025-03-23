@@ -1,7 +1,6 @@
-import os
-
-from contextlib import closing
 import json
+import os
+from contextlib import closing
 
 from database import sqlite
 

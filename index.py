@@ -1,6 +1,7 @@
 import os
-import dotenv
+
 import discord
+import dotenv
 
 cogs = ["utilities", "blacklist-manager"]
 
