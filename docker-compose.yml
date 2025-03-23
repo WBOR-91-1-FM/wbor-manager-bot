@@ -1,0 +1,22 @@
+services:
+  server:
+    build: .
+    image: wborfm/manager-bot:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./generated:/app/generated
+    command: uvicorn server:app --host 0.0.0.0 --port 8000
+    restart: unless-stopped
+
+  discord-bot:
+    build: .
+    image: wborfm/manager-bot:latest
+    volumes:
+      - ./generated:/app/generated
+    environment:
+      - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
+      - DISCORD_GUILD_ID=${DISCORD_GUILD_ID}
+      - DISCORD_ROLE_ID=${DISCORD_ROLE_ID}
+    command: python index.py
+    restart: unless-stopped
