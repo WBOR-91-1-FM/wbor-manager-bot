@@ -13,6 +13,8 @@ Unidecoded: to-kiyo-regi-
 
 The logic here is to find out what is the original word and return it. We do that by selecting the lines that contain the original and target phrases, and then comparing them.
 """
+
+
 def get_original_word(text):
     target_phrase = text.split("\n")[1].split(": ")[1]
     original_phrase = text.split("\n")[2].split(": ")[1]
@@ -26,8 +28,10 @@ def get_original_word(text):
 
     return word
 
+
 def is_offense_warning(text):
     return "Profane word detected" in text
+
 
 def is_utf_warning(text):
     return "Non-ASCII characters found" in text

@@ -10,6 +10,8 @@ An implementation of a list that uses SQLite as a backend.
 
 We use SQLite for 2 reasons: firstly, it's native to Python, and secondly, it's lightweight and easy to use.    
 """
+
+
 class List:
     def __init__(self, name):
         self.name = name
@@ -19,7 +21,9 @@ class List:
 
     def create_table_if_not_exists(self):
         with closing(sqlite.connection.cursor()) as cursor:
-            cursor.execute(f"CREATE TABLE IF NOT EXISTS {self.name} (id INTEGER PRIMARY KEY, name TEXT)")
+            cursor.execute(
+                f"CREATE TABLE IF NOT EXISTS {self.name} (id INTEGER PRIMARY KEY, name TEXT)"
+            )
             sqlite.connection.commit()
 
     def add(self, value):

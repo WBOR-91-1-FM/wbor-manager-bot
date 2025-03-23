@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd48c485-fae5-47b6-84c0-5b420c7f25b7" name="Changes" comment="fix readme" />
+    <list default="true" id="cd48c485-fae5-47b6-84c0-5b420c7f25b7" name="Changes" comment="fix readme again" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +66,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -183,7 +183,7 @@
       <workItem from="1742513915101" duration="6000" />
       <workItem from="1742513939391" duration="4302000" />
       <workItem from="1742576094578" duration="13000" />
-      <workItem from="1742687535059" duration="8475000" />
+      <workItem from="1742687535059" duration="9312000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -209,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742702533810</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix readme again">
+      <option name="closed" value="true" />
+      <created>1742702697230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742702697230</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +227,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="remove guild_id from docker-compose entry" />
     <MESSAGE value="fix readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix readme" />
+    <MESSAGE value="fix readme again" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix readme again" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/wbor_manager_bot$index.coverage" NAME="index Coverage Results" MODIFIED="1742516009133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
