@@ -13,7 +13,7 @@ Usage is pretty simple: right-click the alert message, click on "Apps" and choos
 
 The bot also has a few commands to show statistics, add/remove words, and even import them from a JSON file. Type in / to see the available commands.
 
-The word list can be accessed locally, in the `generated/lists` folder which contains the `profanity.json` and `ignored_words.json` files.
+The word list can be accessed locally in the `generated/lists` folder, which contains the `profanity.json` and `ignored_words.json` files.
 Additionally, lists can be retrieved via a REST API built with FastAPI.
 
 The API container must be run separately from the bot - consult the `docker-compose.yml` file for more information.
@@ -30,7 +30,7 @@ You will need a bot token and the role ID that will allow users to interact with
 ```bash
 docker-compose up -d
 ```
-
+This will start 2 containers: one for the bot and another for the API, which will be available at `http://localhost:8000`.
 #### Local setup
 First, install the dependencies.
 ```bash
