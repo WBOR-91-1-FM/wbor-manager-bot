@@ -16,7 +16,6 @@ services:
       - ./generated:/app/generated
     environment:
       - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
-      - DISCORD_GUILD_ID=${DISCORD_GUILD_ID}
       - DISCORD_ROLE_ID=${DISCORD_ROLE_ID}
     command: python index.py
     restart: unless-stopped
