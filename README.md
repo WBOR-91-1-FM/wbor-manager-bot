@@ -8,6 +8,7 @@ Currently, the bot is able to:
 ![Command example](.github/options.png)
 
 Usage is pretty simple: right-click the alert message, click on "Apps" and choose what you want to do.
+
 ![img.png](.github/img.png)
 
 The bot also has a few commands to show statistics, add/remove words, and even import them from a JSON file. Type in / to see the available commands.
@@ -16,7 +17,6 @@ The word list can be accessed locally, in the `generated/lists` folder which con
 Additionally, lists can be retrieved via a REST API built with FastAPI.
 
 The API container must be run separately from the bot - consult the `docker-compose.yml` file for more information.
-
 Swagger is available at `/docs`.
 
 ![img.png](.github/swagger.png)
